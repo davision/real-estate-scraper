@@ -48,14 +48,11 @@ function onEnd() {
 		}
 		bolhaEnd = false;
 		nepremEnd = false;
-		
 	}
-} 
-
-
+}
 
 sites.push({
-	url: config.url_bolha, 
+	url: config.url_bolha,
 	callback: function (err, body) {
 		var bolhaDelta = 0;
 		if(body) {
@@ -75,7 +72,7 @@ sites.push({
 					bolhaDelta += 1;
 					db.push("/B"+ad.id,ad);
 					delta.push(ad);
-				}	
+				}
 			}
 		}
 		console.log((new Date()).toString() + " BOLHA.COM Delta: " + bolhaDelta);
@@ -84,9 +81,8 @@ sites.push({
 	}
 });
 
-
 sites.push({
-	url: config.url_nepremicnine, 
+	url: config.url_nepremicnine,
 	callback: function (err, body) {
 		var nepremDelta = 0;
 		if(body) {
@@ -115,11 +111,9 @@ sites.push({
 	}
 });
 
-
-
-setInterval( 
+setInterval(
 	function(){
-		console.log((new Date()).toString() + " STARTED"); 
+		console.log((new Date()).toString() + " STARTED");
 		if ((new Date()).getHours() < 22 && (new Date()).getHours() >= 7) {
 			for (var i = 0; i < sites.length; i++){
 				request({

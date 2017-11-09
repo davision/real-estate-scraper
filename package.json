@@ -1,0 +1,32 @@
+{
+  "name": "real-estate-scraper",
+  "version": "1.0.0",
+  "description": "Real Estate scraper",
+  "main": "scraper.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "daemon": "^1.1.0",
+    "node-json-db": "^0.7.3",
+    "nodemailer": "^2.7.2",
+    "tinyreq": "^3.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davision/real-estate-scraper.git"
+  },
+  "keywords": [
+    "real",
+    "estate",
+    "scraper"
+  ],
+  "author": "github.com/mowlc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davision/real-estate-scraper/issues"
+  },
+  "homepage": "https://github.com/davision/real-estate-scraper#readme"
+}
