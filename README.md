@@ -1,4 +1,4 @@
-# real-estate-scraper
+# Real estate scraper
 Web scraper that makes it easier to find real estate in Slovenia. After scraper finishes you get an email with updates, so you don't have to check web pages all the time but only. In email you get all the information you need: Title with location, short description, price and link to original listing.
 
 Email example:
@@ -9,16 +9,13 @@ Currently supporting two major webpages for real estate Bolha.com and Nepremicni
 
 ## Download
 In order to rund script you have to install [Node.js] (https://nodejs.org/en/) and do the following:
-* Clone repo 
+* Clone repo
 ```bash
 git clone https://github.com/mowlc/real-estate-scraper.git
 ```
-* Install additional libraries
+* Install node dependencies
 ```bash
-npm install --save tinyreq
-npm install --save cheerio 
-npm install --save node-json-db 
-npm install --save nodemailer
+npm install
 ```
 
 ## Run
@@ -26,12 +23,12 @@ Take config.json.example, compy and rename it to config.json. Then fill in the r
 ```bash
 sender_email - Email from which emails will be sent (must be gmail)
 sender_pass - Password for the mail specified abs
-interval = 15 - Interval on which the script executes (between 15 and 30 minutes is optimal) 
-receiver_email - List of email addresses on which to send email 
+interval = 15 - Interval on which the script executes (between 15 and 30 minutes is optimal)
+receiver_email - List of email addresses on which to send email
 url_bolha  - URL of selection on bolha.com				
 url_nepremicnine - URL of selection on nepremicnine.net				
 ```
-You can get desired URL's from chosen site(bolha, nepremicnine.net) by configuring search paramteres on the site and then copying the URL in to configuration file. 
+You can get desired URL's from chosen site(bolha, nepremicnine.net) by configuring search paramteres on the site and then copying the URL in to configuration file.
 
 You run the script by executing following command:
 ```bash

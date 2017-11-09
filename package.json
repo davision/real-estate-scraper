@@ -24,7 +24,7 @@
     "scraper"
   ],
   "author": "github.com/mowlc",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/davision/real-estate-scraper/issues"
   },
